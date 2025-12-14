@@ -175,8 +175,14 @@ body {
     margin-top: 0px;
 }
 
-.conteinerFotoTwo {
+.sectionRowOne {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     margin-top: 30px;
+}
+
+.conteinerFotoTwo {
     margin-bottom: 0px;
     padding: 0px;
 }
@@ -186,12 +192,10 @@ body {
 }
 
 .conteinerFotoThree {
-    position: absolute;
-    top: 657px;
-    left: 0;
     background-color: #FFFFFF;
     border-radius: 10px;
     padding-bottom: 57px;
+    margin-left: 15px;
 
 }
 
@@ -199,24 +203,16 @@ body {
     border-radius: 10px;
 }
 
-.conteinerFoto4 {
-    display: flex;
-    justify-content: flex-start;
-    position: absolute;
-    left: 0px;
-    top: 1246px;
-    padding-top: 30px;
-}
 
 .foto5 {
     border-radius: 10px;
 }
 
 .conteinerFoto5 {
-    margin-top: 30px;
     background-color: #FFFFFF;
     border-radius: 10px;
     padding-bottom: 57px;
+    margin-right: 15px;
 }
 
 .foto6 {
@@ -240,7 +236,6 @@ body {
 
 .conteinerFoto7 {
     border-radius: 10px;
-    margin-top: 30px;
     align-self: flex-start;
 }
 
@@ -249,25 +244,26 @@ body {
 }
 
 .conteinerFoto8 {
-    margin-top: 30px;
     border-radius: 10px;
     background-color: #FFFFFF;
     padding-bottom: 57px;
-    position: absolute;
-    top: 2520px;
     flex-direction: column;
     border-radius: 10px;
+    margin-left: 15px;
 }
 
 .conteinerFoto9 {
     align-self: flex-start;
-    margin-top: 30px;
+    margin-right: 15px;
     border-radius: 10px;
     background-color: #FFFFFF;
-    padding-bottom: 57px;
+    padding-bottom: 112px;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+}
+.foto9 {
+    border-radius: 10px;
 }
 
 .natashaFoto {
@@ -299,7 +295,6 @@ body {
     height: 608px;
     justify-content: center;
     display: flex;
-    margin-top: -607px;
     text-align: center;
     border-radius: 10px;
     align-self: flex-end;
@@ -353,7 +348,7 @@ body {
     display: flex;
     background-color: #FFFFFF;
     flex-direction: column;
-    margin: 0 auto;
+
 }
 
 .foto11 {
@@ -559,7 +554,7 @@ body {
     width: 135px;
     height: 46px;
     margin-top: 20px;
-        margin-bottom: 70px;
+    margin-bottom: 70px;
 
 }
 
@@ -670,8 +665,9 @@ body {
     margin-bottom: 5px;
     margin-top: 0px;
 }
-.footerTextTimeUnder{
-       font-family: 'Montserrat', sans-serif;
+
+.footerTextTimeUnder {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     /* regular */
     font-size: 14px;
@@ -696,48 +692,55 @@ body {
     margin-bottom: 5px;
     margin-top: 0px;
 }
-.clockFotoTwo{
+
+.clockFotoTwo {
     width: 64px;
     height: 64px;
     margin-top: 40px;
     margin-right: 10px;
 }
-.fotoClock{
-    display:flex ;
-    flex-direction: column;
-}
-.contact{
+
+.fotoClock {
     display: flex;
     flex-direction: column;
- margin-left: 60px;
 }
-.textContactTall{
-   font-family: 'Playfair Display', serif;
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.textContactTall {
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
     /* bold */
     font-size: 20px;
     margin-bottom: 0px;
 }
-.textContact{
+
+.textContact {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     /* regular */
     font-size: 14px;
     margin-bottom: 20px;
 }
-.footerText{
-        font-family: 'Montserrat', sans-serif;
+
+.footerText {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     /* regular */
     font-size: 12px;
     margin-bottom: 20px;
 }
-footer{
+
+footer {
     display: flex;
     background-color: black;
     height: 46px;
     justify-content: center;
     text-align: center;
     color: white;
-    
-}  
+
+}
