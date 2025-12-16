@@ -132,10 +132,6 @@ body {
     background-color: #FFFFFF;
     flex-direction: column;
     border-radius: 10px;
-    padding: 50px;
-    width: 670px;
-    height: 584px;
-
 }
 
 .textCardHeder {
@@ -228,6 +224,7 @@ body {
     justify-content: flex-end;
     flex-direction: column;
     align-self: flex-start;
+    margin-left: 10px;
 }
 
 .foto7 {
@@ -254,7 +251,7 @@ body {
 
 .conteinerFoto9 {
     align-self: flex-start;
-    margin-right: 15px;
+    margin-right: 38px;
     border-radius: 10px;
     background-color: #FFFFFF;
     padding-bottom: 112px;
@@ -262,6 +259,7 @@ body {
     justify-content: flex-end;
     flex-direction: column;
 }
+
 .foto9 {
     border-radius: 10px;
 }
@@ -319,7 +317,7 @@ body {
     height: 23px;
     display: flex;
     margin-top: 332px;
-    margin-left: 20px;
+    margin-right: 20px;
     align-items: center;
     justify-content: center;
 
@@ -353,14 +351,12 @@ body {
 
 .foto11 {
     border-radius: 10px;
+    margin-left: 10px;
 
 }
 
 .conteinerFoto11 {
     border-radius: 10px;
-    margin-top: 30px;
-    width: 570px;
-    height: 651px;
 }
 
 .foto12 {
@@ -368,16 +364,15 @@ body {
 }
 
 .conteinerFoto12 {
-    width: 570px;
     background-color: rgb(255, 255, 255);
-    margin-top: -655px;
     justify-content: center;
     display: flex;
     flex-direction: column;
     text-align: center;
     border-radius: 10px;
     align-self: flex-start;
-    padding-bottom: 140px;
+    padding-bottom: 135px;
+    margin-left: 15px;
 }
 
 .galereuContainer {
@@ -742,5 +737,112 @@ footer {
     justify-content: center;
     text-align: center;
     color: white;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+.headerMainContainer {
+    height: 130px;
+    width: 100%;
+    margin: 0 auto;
+
+
+}
+
+.imgMainPage {
+    height: 130px; 
+    width: 100%; 
+   
+
+}
+
+.conteinerMainFoto {
+    width: 100%;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.conteinerFotoOne {
+    padding: 0;
+}
+
+.fotoOne {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+/* 2. Все карточки */
+.conteinerFotoOne,
+.conteinerFotoThree,
+.conteinerFoto5,
+.conteinerFoto6,
+.conteinerFoto8,
+.conteinerFoto9,
+.conteinerFoto10,
+.conteinerFoto11,
+.conteinerFoto12 {
+    width: 100%;
+    max-width: 100%;
+    align-self: center;
+    justify-content: center;
+}
+
+/* 3. Ряды с двумя блоками → колонка */
+.sectionRowOne {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sectionRowOne>div {
+    margin: 0;
+    width: 100%;
+    align-self: center;
+}
+
+/* 4. Фиксированные огромные контейнеры */
+.galereuContainer,
+.timeOneTall {
+    width: 100%;
+    height: auto;
+}
+
+/* 5. Email блок */
+.emailContainer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.inputEmail {
+    width: 100%;
+    margin-right: 0;
+}
+
+/* 6. Footer time */
+.containerTimeOneTall {
+    margin-left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.imgMainPage{
+    width: 100%;
+    height: auto;
+
+}
+/* 7. Картинки */
+img {
+    max-width: 100%;
+    align-items: center;
+    align-self: center;
+    height: auto;
+}
 
 }
