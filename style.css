@@ -892,7 +892,9 @@ footer {
         margin-right: 15px;
         /* Отступ от часов до текста */
     }
-
+.clockFoto,.clockFotoTwo{
+    display: none;
+}
     /* 3. Настраиваем колонку с текстом адресов */
     .textFooterTall {
         display: flex;
