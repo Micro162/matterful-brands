@@ -744,25 +744,30 @@ footer {
 
 
 @media (max-width: 768px) {
+
     .headerMainContainer {
         height: 130px;
         width: 100%;
         margin: 0 auto;
-
-
+        display: flex;
     }
+
+    .logoHead {
+        width: 90%;
+        max-width: 90%;
+        margin: 0px;
+    }
+
     .imgMainPage {
-        height: 130px;
-        width: 100%;
 
-
-
+        display: none;
     }
-
+.underImg{
+    margin: 100px;
+}
     .conteinerMainFoto {
         width: 100%;
         align-items: center;
-        padding: 0 16px;
     }
 
     .conteinerFotoOne {
@@ -782,32 +787,31 @@ footer {
     .conteinerFoto4,
     .conteinerFoto5,
     .conteinerFoto6,
-        .conteinerFoto7,
-
+    .conteinerFoto7,
     .conteinerFoto8,
     .conteinerFoto9,
     .conteinerFoto10,
     .conteinerFoto11,
-    .conteinerFoto12,
-    .conteinerFoto13 {
+    .conteinerFoto12 {
+        width: 90%;
+        max-width: 90%;
+        margin: 0px;
+    }
+
+    .conteinerOneRiview {
         width: 90%;
         max-width: 90%;
         align-self: center;
         justify-content: center;
-                margin: 0px;
-
     }
-.conteinerOneRiview{
-    width: 90%;
-    max-width: 90%;
-    align-self: center;
-    justify-content: center;
-}
+
     .sectionRowOne {
         flex-direction: column;
         gap: 20px;
     }
-
+.buttonEmail{
+    margin-top: 20px;
+}
     .sectionRowOne>div {
         margin: 0;
         width: 100%;
@@ -829,12 +833,12 @@ footer {
 
     .inputEmail {
         width: 100%;
-        margin-right: 0;
+        margin-right: 0px;
     }
 
     .contactTime {
         flex-direction: column;
-        align-items:flex-end;
+        align-items: flex-end;
         justify-content: center;
         display: flex;
         align-self: center;
@@ -844,9 +848,9 @@ footer {
     .containerTimeOneTall {
         width: 100%;
         flex-direction: column;
-    display: flex;
-    justify-content: left;
-    align-items: start;
+        display: flex;
+        justify-content: left;
+        align-items: start;
     }
 
     .imgMainPage {
@@ -854,9 +858,11 @@ footer {
         height: auto;
 
     }
-.logoFooter{
-    display: none;
-}
+
+    .logoFooter {
+        display: none;
+    }
+
     img {
         max-width: 100%;
         align-items: center;
@@ -865,49 +871,56 @@ footer {
         margin: 0px;
     }
 
-@media (max-width: 768px) {
 
     /* 1. Возвращаем горизонтальное расположение (как на ПК) */
     .containerTimeOneTall {
         display: flex;
-        flex-direction: row; /* Оставляем в ряд */
+        flex-direction: row;
+        /* Оставляем в ряд */
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
-        margin-left: 0; /* Убираем огромный отступ с ПК */
+        margin-left: 0;
+        /* Убираем огромный отступ с ПК */
     }
 
     /* 2. Настраиваем колонку с иконками часов */
     .fotoClock {
         display: flex;
-        flex-direction: column; /* Иконки друг под другом */
-        margin-right: 15px; /* Отступ от часов до текста */
+        flex-direction: column;
+        /* Иконки друг под другом */
+        margin-right: 15px;
+        /* Отступ от часов до текста */
     }
 
     /* 3. Настраиваем колонку с текстом адресов */
     .textFooterTall {
         display: flex;
         flex-direction: column;
-        text-align: left; /* Выравнивание текста по левому краю */
+        text-align: left;
+        /* Выравнивание текста по левому краю */
     }
 
     /* 4. Исправляем отступы часов, чтобы они совпадали с текстом */
     .clockFoto {
-        margin-top: 5px; /* Подберите значение, чтобы иконка была вровень с заголовком */
+        margin-top: 5px;
+        /* Подберите значение, чтобы иконка была вровень с заголовком */
     }
-    
+
     .clockFotoTwo {
-        margin-top: 55px; /* Регулирует отступ между первой и второй иконкой часов */
+        margin-top: 55px;
+        /* Регулирует отступ между первой и второй иконкой часов */
     }
 
     /* 5. Убираем перекрытие футером (черная полоска) */
     .contactTime {
-        padding-bottom: 80px; /* Даем место, чтобы контент не залезал под футер */
+        padding-bottom: 80px;
+        /* Даем место, чтобы контент не залезал под футер */
     }
 
     footer {
-        position: relative; /* Чтобы он просто шел следом, а не плавал сверху */
+        position: relative;
+        /* Чтобы он просто шел следом, а не плавал сверху */
         width: 100%;
     }
-}
 }
